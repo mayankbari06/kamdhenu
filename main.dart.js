@@ -117102,18 +117102,16 @@ A.kv.prototype={
 ah(){var s=A.e6($.aF(),A.dW(),t.A),r=Date.now(),q=$.aq()
 return new A.acg(s,r,new A.aS(null,t.l),new A.aJ(B.U,q),new A.aJ(B.U,q),A.Jm(!0),B.L)}}
 A.acg.prototype={
-ng(){var s=0,r=A.v(t.z),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d
+ng(){var s=0,r=A.v(t.z),q,p=2,o,n=this,m,l,k,j,i,h,g,f
 var $async$ng=A.q(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 i=n.z
 if(i.a.a.length!==10){A.aU(B.ab,16,B.X,"Invalid Mobile No",B.w,B.aa)
 s=1
 break}n.at=!0
-h=A.bZ("https://kamdhenusoft.com/kamdhenu/user/login.php",0,null)
-g=t.N
-f=A.X(["Access-Control-Allow-Origin","*","Access-Control-Allow-Credentials","true","Access-Control-Allow-Headers","Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale","Access-Control-Allow-Methods","POST, OPTIONS"],g,g)
+h=t.N
 s=7
-return A.w(A.d_(h,A.X(["mobileno",B.p.aO(i.a.a),"userpassword",B.p.aO(n.Q.a.a)],g,g),f),$async$ng)
+return A.w(A.d_(A.bZ("https://kamdhenusoft.com/kamdhenu/user/login.php",0,null),A.X(["mobileno",B.p.aO(i.a.a),"userpassword",B.p.aO(n.Q.a.a)],h,h),null),$async$ng)
 case 7:m=b
 n.at=!1
 s=m.b===200?8:9
@@ -117133,8 +117131,8 @@ case 11:case 9:p=2
 s=6
 break
 case 4:p=3
-d=o
-j=A.ak(d)
+f=o
+j=A.ak(f)
 A.dq(j)
 s=6
 break
